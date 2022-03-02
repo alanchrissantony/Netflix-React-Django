@@ -6,7 +6,7 @@ import Logo from "../../Images/netflix.png";
 function Navbar() {
   return (
     <div>
-      <nav className="flex text-gray-100 justify-between items-center py-3 px-4 fixed w-full z-50">
+      <nav className="flex text-gray-100 justify-between items-center py-3 px-4  w-full z-50 navSection">
         <div className="w-6/12">
           <a href="/">
             <img src={Logo} alt="logo" className="w-5/12 md:w-2/12" />
