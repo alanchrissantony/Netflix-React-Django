@@ -1,3 +1,19 @@
 .navSection{
     position: absolute;
 }
+.navLogo{
+    width: 20.5%;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
+.navSignInBtn{
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-right: 2.5rem;
+    margin-top: 0.75rem;
+}

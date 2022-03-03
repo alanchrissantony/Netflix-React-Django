@@ -1,0 +1,44 @@
+.footerSection{
+    color: #757575;
+}
+.footerDiv{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.footerFontStyleLarge{
+    color: #757575;
+    font-size: 1em;
+    margin-top: 2rem;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+.footerStyleSmall{
+    color: #757575;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.footerStyleSmall:hover{
+    text-decoration: underline;
+}
+.FooterTextContainer{
+    margin-top: 2rem;
+}
+.FooterTextDiv{
+    width: 25%;
+    float: left;
+}
+.FooterTextDivRow{
+    margin-top: 1rem;
+}
+.CorporateFooterDiv{
+    width: 75%;
+}
+.FooterNumber{
+    cursor: pointer;
+}
+.FooterNumber:hover{
+    text-decoration: underline;
+}
