@@ -1,6 +1,7 @@
 import React from 'react'
 import Logobar from '../Components/Logobar/Logobar'
 import LoginJsx from '../Components/Login/Login'
+import Footer from '../Components/Footer/Footer'
 
 
 function Login() {
@@ -8,6 +9,7 @@ function Login() {
     <div>
         <Logobar/>
         <LoginJsx/>
+        <Footer/>
     </div>
   )
 }

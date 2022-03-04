@@ -1,6 +1,5 @@
 import React from "react";
 import "../../App.css";
-import Footer from "../Footer/Footer";
 import "./Login.css";
 function Login() {
   return (
@@ -56,7 +55,6 @@ function Login() {
           </form>
         </div>
       </header>
-      <Footer/>
     </div>
   );
 }
