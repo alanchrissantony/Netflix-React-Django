@@ -39,8 +39,8 @@ function Login() {
 
               <input
                 type="hidden"
-                name="{{ redirect_field_name }}"
-                value="{{ redirect_field_value }}"
+                name=""
+                value=""
               />
 
               <div className="flex justify-center items-center">

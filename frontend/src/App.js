@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Index from './Pages/Index';
 import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Index/>}/>
           <Route path='/account/login' element={<Login/>}/>
+          <Route path='/account/signup' element={<SignUp/>}/>
         </Routes>
       </Router>
     </div>

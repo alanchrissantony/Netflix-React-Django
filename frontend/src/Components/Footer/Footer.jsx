@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div>
-        <section className="bg-black bg-opacity-50 showcase flex justify-center items-center bg-no-repeat footerSection">
+        <section className="bg-black bg-opacity-50 flex justify-center items-center bg-no-repeat footerSection">
             <div className='footerDiv'>
                 <p className='footerFontStyleLarge'>Questions? Call <span className='FooterNumber'>000-800-040-1843</span></p>
                 <div className='FooterTextContainer'>
