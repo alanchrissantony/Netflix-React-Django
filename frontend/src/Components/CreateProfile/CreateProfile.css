@@ -1,0 +1,94 @@
+.createProfileSection{
+    background-color: #141414;
+}
+.createProfileTitle{
+    font-size: 3.125rem;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 1rem;   
+}
+.createProfileSubTitle{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.1;
+    color: #5d5d5d;
+}
+
+.createProfileBox{
+    margin-top: 1rem;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #222222;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #222222;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 150px;
+}
+.createProfileImageDiv{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    float: left;
+}
+.createProfileImg{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.createProfileInputNameDiv{
+    float: left;
+    width: auto;
+}
+.createProfileInputName{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    background-color: #666;
+    color: #d4d4d6;
+    width: 100%;
+}
+.createProfileInputName::placeholder{
+    color: #d4d4d6;
+}
+.createProfileCheckBoxDiv{
+    float: left;
+    margin-top: 3.25rem;
+    margin-left: 2rem;
+}
+.createProfileCheckBox{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    float: left;
+}
+.createProfileCheckBoxText{
+    float: left;
+    color: #f6feff;
+    margin-top: 0.35rem;
+    margin-left: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.createProfileContinueBtnDiv{
+    float: left;
+}
+.createProfileContinueBtn{
+    width: 10rem;
+}
+.createProfileCancelBtnDiv{
+    float: left;
+    margin-left: 2rem;
+}
+.createProfileCancelBtn{
+    background-color: #131313;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #5c5c5c;
+    color: #7b7b7b;
+    height: 2.5rem;
+    width: 6rem;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

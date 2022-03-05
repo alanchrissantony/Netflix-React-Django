@@ -4,6 +4,7 @@ import Index from './Pages/Index';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import Profile from './Pages/Profile';
+import ProfileCreate from './Pages/ProfileCreate';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/account/login' element={<Login/>}/>
           <Route path='/account/signup' element={<SignUp/>}/>
           <Route path='/profile' element={<Profile/>}/>
+          <Route path='/createprofile' element={<ProfileCreate/>}/>
         </Routes>
       </Router>
     </div>

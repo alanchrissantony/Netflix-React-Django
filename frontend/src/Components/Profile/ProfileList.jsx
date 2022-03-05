@@ -14,7 +14,7 @@ function Profile() {
         <div class="flex flex-wrap justify-center items-center w-10/12  md:w-5/10 profileBoxContainer">
           <a href="/">
             <div class="w-32 h-32 m-4  bg-blue-500 flex justify-center items-center flex-col rounded-md cursor-pointer profileBox">
-              <img className="profileBoxImg" src="https://imgur.com/KclrcPw.png" alt="" />
+              <img className="profileBoxImg" src="https://imgur.com/WK2idvp.png" alt="" />
             </div>
             <p className="profileBoxText">Mom</p>
           </a>
@@ -22,7 +22,7 @@ function Profile() {
 
           <a href="/">
             <div class="w-32 h-32 m-4  bg-blue-500 flex justify-center items-center flex-col rounded-md cursor-pointer profileBox">
-              <img className="profileBoxImg" src="https://imgur.com/prnpovw.png" alt="" />
+              <img className="profileBoxImg" src="https://imgur.com/6FgZxbi.png" alt="" />
             </div>
             <p className="profileBoxText">Dad</p>
           </a>
@@ -36,7 +36,7 @@ function Profile() {
 
           <a href="/">
             <div class="w-32 h-32 m-4  bg-blue-500 flex justify-center items-center flex-col rounded-md cursor-pointer profileBox">
-              <img className="profileBoxImg" src="https://imgur.com/WK2idvp.png" alt="" />
+              <img className="profileBoxImg" src="https://imgur.com/p19PL8P.png" alt="" />
             </div>
             <p className="profileBoxText">Children</p>
           </a>
