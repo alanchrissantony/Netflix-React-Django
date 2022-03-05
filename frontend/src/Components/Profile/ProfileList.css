@@ -9,8 +9,8 @@
     margin-bottom: 1rem;
 }
 .profileBox{
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 0;
     border-width: 3px;
     border-style: solid;
@@ -26,8 +26,8 @@
     cursor: pointer;
 }
 .ProfileAddIconDiv{
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
 }
 .profileBoxText{
     text-align: center;
