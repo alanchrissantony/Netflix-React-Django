@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../App.css";
 import "./Signup.css";
 
@@ -40,7 +41,7 @@ function Signup() {
                   type="password"
                   name="password2"
                   id="id_password2"
-                  placeholder="Password"
+                  placeholder="Confirm password"
                 />
               </div>
 
@@ -57,7 +58,7 @@ function Signup() {
               </div>
 
               <div className="my-4">
-                <p className="SignUpNewToNetflixText">Have account already ? <span className="SignUpSignInText"> Sign in now</span>.</p>
+                <p className="SignUpNewToNetflixText">Have account already? <span className="SignUpSignInText"> <Link to={'/account/login'}> Sign in now</Link></span>.</p>
               </div>
             </div>
           </form>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../App.css";
 import "./Login.css";
 function Login() {
@@ -49,7 +50,7 @@ function Login() {
               </div>
 
               <div className="my-4">
-                <p className="LogInNewToNetflixText">New to Netflix? <span className="LogInSignUpText"> Sign up now</span>.</p>
+                <p className="LogInNewToNetflixText">New to Netflix? <span className="LogInSignUpText"> <Link to={'/account/signup'}> Sign up now</Link></span>.</p>
               </div>
             </div>
           </form>

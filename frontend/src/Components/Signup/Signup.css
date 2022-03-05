@@ -58,6 +58,6 @@
     color: #fff;
     cursor: pointer;
 }
-.SignUpSignUpText:hover{
+.SignUpSignInText:hover{
     text-decoration: underline;
 }

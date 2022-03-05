@@ -4,6 +4,7 @@ import "../../App.css";
 import TvImg from '../../Images/tv.png'
 import MobileImg from '../../Images/mobile-0819.jpg'
 import KidImg from '../../Images/netflix_kid.png'
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -31,7 +32,7 @@ function Home() {
                 placeholder="Email address"
                 className="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4 indexGetStartedInput"
               />
-              <a href='' className="md:w-1/4">
+              <Link to={'/account/login'} className="md:w-1/4">
                 <button className="bg-primary_red font-medium md:font-normal flex justify-center items-center py-4 px-2 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl indexGetStartedBtn">
                   <span>Get Started</span>
                   <ion-icon
@@ -39,7 +40,7 @@ function Home() {
                     className="text-2xl"
                   ></ion-icon>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
