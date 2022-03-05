@@ -1,5 +1,6 @@
 .createProfileSection{
     background-color: #141414;
+    position: relative;
 }
 .createProfileTitle{
     font-size: 3.125rem;
