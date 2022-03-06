@@ -28,7 +28,7 @@ function Header() {
 
       <div className="headerCategoryTextContainer">
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText">Home</p>
+          <p className="headerCategoryText active">Home</p>
         </div>
         <div className="headerCategoryTextDiv">
           <p className="headerCategoryText">TV Shows</p>
