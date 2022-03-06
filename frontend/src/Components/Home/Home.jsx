@@ -32,7 +32,7 @@ function Home() {
                 placeholder="Email address"
                 className="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4 indexGetStartedInput"
               />
-              <Link to={'/account/login'} className="md:w-1/4">
+              <Link to={'/account/signup'} className="md:w-1/4">
                 <button className="bg-primary_red font-medium md:font-normal flex justify-center items-center py-4 px-2 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl indexGetStartedBtn">
                   <span>Get Started</span>
                   <ion-icon
