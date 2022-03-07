@@ -33,6 +33,10 @@
     color: black;
     background-color: #e6e6e6;
 }
+.bannerListIcon{
+    font-size: 18px;
+    font-weight: 700;
+}
 .bannerDescription{
     width: 45rem;
     line-height: 1.3;

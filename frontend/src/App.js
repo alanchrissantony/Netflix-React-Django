@@ -7,6 +7,7 @@ import Profile from './Pages/Profile';
 import ProfileCreate from './Pages/ProfileCreate';
 import Home from './Pages/Home';
 import MovieDetails from './Pages/MovieDetails';
+import ModelPage from './Pages/ModelPage';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
           <Route path='/createprofile' element={<ProfileCreate/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/movie' element={<MovieDetails/>}/>
+          <Route path='/tvshows' element={<ModelPage headTitle='Award-Winning TV Shows' titleOne='Trending Now' titleTwo='Critically Acclaimed TV Dramas' titleThree='Top Picks for bm25'/>}/>
+          <Route path='/movies' element={<ModelPage headTitle='Movies' titleOne='Trending Now' titleTwo='New Releases' titleThree='Popular Movies'/>}/>
+          <Route path='/latest' element={<ModelPage headTitle='Latest' titleOne='Trending Now' titleTwo='New Releases' titleThree='Popular Movies'/>}/>
+          <Route path='/mylist' element={<ModelPage headTitle='My List' titleOne='Recently Added' titleTwo='Continue Watching' titleThree='Popular on Netflix'/>}/>
         </Routes>
       </Router>
     </div>

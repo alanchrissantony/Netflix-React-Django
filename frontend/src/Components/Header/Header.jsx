@@ -7,7 +7,7 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -15,6 +15,16 @@ function Header() {
   };
 
   window.addEventListener("scroll", changeBackground);
+
+
+  const [home, setHome] = useState(false)
+  const [tvShows, setTVShows] = useState(false)
+  const [movies, setMovies] = useState(false)
+  const [latest, setLatest] = useState(false)
+  const [myList, setMyList] = useState(false)
+
+  
+  
 
   return (
     <nav className={navbar ? "headerNavbar active" : "headerNavbar"}>
@@ -28,19 +38,19 @@ function Header() {
 
       <div className="headerCategoryTextContainer">
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText active">Home</p>
+          <Link to={'/home'}><p className={home ? "headerCategoryText active" : "headerCategoryText"}>Home</p></Link>
         </div>
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText">TV Shows</p>
+          <Link to={'/tvshows'}><p className={tvShows ? "headerCategoryText active" : "headerCategoryText"}>TV Shows</p></Link>
         </div>
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText">Movies</p>
+          <Link to={'/movies'}><p className={movies ? "headerCategoryText active" : "headerCategoryText"}>Movies</p></Link>
         </div>
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText">Latest</p>
+          <Link to={'/latest'}><p className={latest ? "headerCategoryText active" : "headerCategoryText"}>Latest</p></Link>
         </div>
         <div className="headerCategoryTextDiv">
-          <p className="headerCategoryText">My List</p>
+          <Link to={'/mylist'}><p className={myList ? "headerCategoryText active" : "headerCategoryText"}>My List</p></Link>
         </div>
       </div>
 

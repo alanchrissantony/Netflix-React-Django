@@ -7,7 +7,7 @@ function RowPost(props) {
 
   return (
     <div className='row'>
-            <p className='rowPosterTitle'>{props.title}</p>
+            <p className={props.active ? 'rowPosterTitle active' : 'rowPosterTitle'}>{props.title}</p>
             <div className="posters">
                 
                     <img src={'https://wallpaperfx.com/view_image/john-wick-movie-poster-1536x864-wallpaper-17077.jpg'} alt="" className={props.isSmall ? 'smallPoster':'poster'} />

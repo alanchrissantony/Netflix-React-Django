@@ -32,3 +32,7 @@
     font-weight: bolder;
 
 }
+.rowPosterTitle.active{
+    font-size: 1em;
+    font-weight: bold;
+}
