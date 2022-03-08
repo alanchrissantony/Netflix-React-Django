@@ -1,6 +1,6 @@
 import React from 'react'
 import Logobar from '../Components/Logobar/Logobar'
-import LoginJsx from '../Components/Login/Login'
+import LoginJsx from '../Components/Accounts/Login/Login'
 import Footer from '../Components/Footer/Footer'
 
 

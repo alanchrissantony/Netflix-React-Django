@@ -1,5 +1,5 @@
 import React from 'react'
-import CreateProfile from '../Components/CreateProfile/CreateProfile'
+import CreateProfile from '../Components/Profile/CreateProfile/CreateProfile'
 import LogobarSM from '../Components/Logobar/LogobarSM'
 
 function ProfileCreate() {

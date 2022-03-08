@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import {useLocation} from 'react-router-dom'
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
+
+  const location = useLocation()
 
   const changeBackground = () => {
     if (window.scrollY >= 50) {
@@ -23,7 +26,48 @@ function Header() {
   const [latest, setLatest] = useState(false)
   const [myList, setMyList] = useState(false)
 
+
   
+    const pathname = window.location.pathname
+
+    useEffect(() => {
+
+      if(pathname === '/home'){
+        setHome(true)
+        setTVShows(false)
+        setMovies(false)
+        setLatest(false)
+        setMyList(false)
+      }else if(pathname === '/tvshows'){
+        setHome(false)
+        setTVShows(true)
+        setMovies(false)
+        setLatest(false)
+        setMyList(false)
+      }else if(pathname === '/movies'){
+        setHome(false)
+        setTVShows(false)
+        setMovies(true)
+        setLatest(false)
+        setMyList(false)
+      }else if(pathname === '/latest'){
+        setHome(false)
+        setTVShows(false)
+        setMovies(false)
+        setLatest(true)
+        setMyList(false)
+      }else if(pathname === '/mylist'){
+        setHome(false)
+        setTVShows(false)
+        setMovies(false)
+        setLatest(false)
+        setMyList(true)
+      }
+    }, [location])
+    
+
+
+
   
 
   return (
