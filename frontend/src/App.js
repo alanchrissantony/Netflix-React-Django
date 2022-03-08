@@ -8,6 +8,7 @@ import ProfileCreate from './Pages/ProfileCreate';
 import Home from './Pages/Home';
 import MovieDetails from './Pages/MovieDetails';
 import ModelPage from './Pages/ModelPage';
+import ProfileEdit from './Pages/ProfileEdit';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/account/signup' element={<SignUp/>}/>
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/createprofile' element={<ProfileCreate/>}/>
+          <Route path='/editprofile' element={<ProfileEdit/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/movie' element={<MovieDetails/>}/>
           <Route path='/tvshows' element={<ModelPage headTitle='Award-Winning TV Shows' titleOne='Trending Now' titleTwo='Critically Acclaimed TV Dramas' titleThree='Top Picks for bm25'/>}/>
