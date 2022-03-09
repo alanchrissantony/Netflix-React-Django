@@ -53,11 +53,11 @@ function Profile() {
         </div>
 
         <div className="flex justify-center items-center">
-          <a href="/">
+          <Link to={'/manageprofiles'}>
             <button className="px-4 py-2 rounded-md outline-none bg-gray-400 text-gray-100 profileManageBtn">
               MANAGE PROFILES
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
