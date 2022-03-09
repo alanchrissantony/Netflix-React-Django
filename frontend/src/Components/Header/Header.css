@@ -74,3 +74,63 @@
     color: #f9f7f7;
     cursor: pointer;
 }
+.headerDropdownContentContainer{
+    background-color: #111;
+    width: 200px;
+    height: 190px;
+    color: #f9f7f7;
+}
+.headerDropdownContentDiv{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+    padding-top: 0.5rem;
+}
+.headerDropdownContentTopDiv{
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.headerDropdownContentBottomContainer{
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerDropdownContentManageProfilesDiv{
+    margin-top: 0.75rem;
+}
+.headerDropdownContentManageProfiles{
+    font-size: 15px;
+    cursor: pointer;
+}
+.headerDropdownContentBottomText{
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+.headerDropdownContentSignOutDiv{
+    margin-top: 0.5rem;
+}
+.headerDropdownContentKidsImg{
+    width: 30px;
+    float: left;
+    cursor: pointer;
+}
+.headerDropdownContentKids{
+    margin-left: 3rem;
+    padding-top: 0.25rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+.header-dropdown-content{
+    margin-left: 580px;
+    margin-top: 2rem;
+    position: absolute;
+    display: none;
+}
+.headerAvatarDiv:hover .header-dropdown-content{
+    display: block;
+}
