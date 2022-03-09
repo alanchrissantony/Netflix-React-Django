@@ -12,7 +12,7 @@ function Manage() {
         </h2>
 
         <div className="flex flex-wrap justify-center items-center w-10/12  md:w-5/10 ManageBoxContainer">
-          <a href="/">
+          <Link to={'/editprofile'}>
             <div
               className="w-32 h-32 m-4  bg-black-500 flex justify-center items-center flex-col rounded-md cursor-pointer ManageBox"
               style={{
@@ -28,9 +28,9 @@ function Manage() {
               </div>
             </div>
             <p className="ManageBoxText">Mom</p>
-          </a>
+          </Link>
 
-          <a href="/">
+          <Link to={"/editprofile"}>
             <div
               className="w-32 h-32 m-4  bg-black-500 flex justify-center items-center flex-col rounded-md cursor-pointer ManageBox"
               style={{
@@ -46,9 +46,9 @@ function Manage() {
               </div>
             </div>
             <p className="ManageBoxText">Dad</p>
-          </a>
+          </Link>
 
-          <a href="/">
+          <Link to={"/editprofile"}>
             <div
               className="w-32 h-32 m-4  bg-black-500 flex justify-center items-center flex-col rounded-md cursor-pointer ManageBox"
               style={{
@@ -64,9 +64,9 @@ function Manage() {
               </div>
             </div>
             <p className="ManageBoxText">Stefiya</p>
-          </a>
+          </Link>
 
-          <a href="/">
+          <Link to={"/editprofile"}>
             <div
               className="w-32 h-32 m-4  bg-black-500 flex justify-center items-center flex-col rounded-md cursor-pointer ManageBox"
               style={{
@@ -82,9 +82,9 @@ function Manage() {
               </div>
             </div>
             <p className="ManageBoxText">Children</p>
-          </a>
+          </Link>
 
-          <Link to={"/createManage"}>
+          <Link to={"/createprofile"}>
             <div className="w-32 h-32 m-4 flex justify-center items-center flex-col ManageAddIconDiv">
               <i className="fa-solid fa-circle-plus ManageAddIcon"></i>
             </div>
@@ -93,11 +93,11 @@ function Manage() {
         </div>
 
         <div className="flex justify-center items-center">
-          <a href="/">
+          <Link to={"/profile"}>
             <button className="px-4 py-2 rounded-md outline-none bg-gray-400 text-gray-100 ManageDoneBtn">
               Done
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
