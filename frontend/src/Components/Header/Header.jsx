@@ -59,7 +59,7 @@ function Header() {
       setLatest(false);
       setMyList(true);
     }
-  }, [location]);
+  }, [location, pathname]);
 
   return (
     <nav className={navbar ? "headerNavbar active" : "headerNavbar"}>
@@ -157,18 +157,18 @@ function Header() {
               </p>
             </div>
             <div className="headerDropdownContentManageProfilesDiv">
-              <p className="headerDropdownContentManageProfiles">
+              <Link to={'/manageprofiles'}><p className="headerDropdownContentManageProfiles">
                 Manage Profiles
-              </p>
+              </p></Link>
             </div>
           </div>
         </div>
         <div className="headerDropdownContentBottomContainer">
         <div className="headerDropdownContentBottomDiv">
             <div className="headerDropdownContentYourAccountDiv">
-              <p className="headerDropdownContentYourAccount headerDropdownContentBottomText">
-                Your Account
-              </p>
+              <Link to={'/account'}><p className="headerDropdownContentYourAccount headerDropdownContentBottomText">
+                Account
+              </p></Link>
             </div>
             <div className="headerDropdownContentSignOutDiv">
               <p className="headerDropdownContentSignOut headerDropdownContentBottomText">

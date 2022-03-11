@@ -1,0 +1,80 @@
+.accountSection{
+    margin-top: 4rem;
+    background-color: #e0e0e0;
+    min-height: 575px;
+}
+.accountContainer{
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    margin-top: 1rem;
+}
+.accountTitle{
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.1;
+    color: #111;
+}
+.accountContentSection{
+    margin-top: 1rem;
+    width: auto;
+    overflow: auto;
+    height: auto;
+
+    border-top-color: rgb(180, 180, 180);
+    border-top-width: 1px;
+    border-top-style: solid;
+
+    border-bottom-color: rgb(180, 180, 180);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.accountUserProfileImgDiv{
+    margin-top: 2rem;
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    float: left;
+    border: none;
+    border-radius: 8px;
+}
+.accountContentContainer{
+    float: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+.accountContentEmailDiv{
+    margin-top: 1.5rem;
+    width: 750px;
+}
+.accountContentEmail{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left;
+}
+.accountContentPasswordDiv{
+    margin-top: 1.5rem;
+    width: 750px;
+}
+.accountContentPassword{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left;
+    color: rgb(75, 75, 55);
+}
+.accountContentChange{
+    margin-left: 38rem;
+    font-size: 14px;
+    color: #007185;
+    font-weight: 300;
+    padding-top: 0.25rem;
+    cursor: pointer;
+}
+.accountContentChange:hover{
+    text-decoration: underline;
+}

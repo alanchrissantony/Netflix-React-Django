@@ -1,6 +1,7 @@
 import React from "react";
 import "./EditProfile.css";
 import "../../../App.css";
+import { Link } from "react-router-dom";
 
 function EditProfile() {
   return (
@@ -51,7 +52,7 @@ function EditProfile() {
               </button>
             </div>
             <div className="flex editProfileCancelBtnDiv">
-              <button className="editProfileCancelBtn">Cancel</button>
+              <Link to={'/manageprofiles'}><button className="editProfileCancelBtn">Cancel</button></Link>
             </div>
           </div>
         </div>

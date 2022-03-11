@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../../App.css";
-import "./Login.css";
-function Login() {
+import "../Login/Login.css"
+import "./Password.css";
+function Password() {
   return (
     <div className="LogInRootSection">
       <header className="min-h-screen w-full bg-black bg-opacity-75 showcase border-gray-600 border-b-8 flex justify-center py-20 bg-no-repeat logInSection">
@@ -12,7 +13,7 @@ function Login() {
             className="bg-opacity-70 py-8 px-4 w-8/12 rounded-md LogInForm"
           >
             <div className="LoginFormDiv">
-              <h1 className="text-4xl font-semibold LoginSignInText">Sign In</h1>
+              <h1 className="text-4xl font-semibold LoginSignInText">Change Password</h1>
 
               <div className=" text-center my-4 text-primary_red">
                 <p className="text-primary_red "></p>
@@ -21,19 +22,19 @@ function Login() {
               <div>
                 <input
                   className="p-2 bg-gray-200 rounded-sm text-gray-900 outline-none block w-full LogInInput"
-                  type="email"
-                  name="login"
-                  id="id_login"
-                  placeholder="Your Email"
+                  type="password"
+                  name="password"
+                  id="id_password"
+                  placeholder="New password"
                 />
               </div>
               <div className="my-3">
                 <input
                   className="p-2 bg-gray-200 rounded-sm text-gray-900 outline-none block w-full LogInInput LogInInputPassword"
                   type="password"
-                  name="password"
+                  name="confirm_password"
                   id="id_password"
-                  placeholder="Password"
+                  placeholder="Confirm password"
                 />
               </div>
 
@@ -45,13 +46,13 @@ function Login() {
 
               <div className="flex justify-center items-center">
                 <button className="py-2 px-4 bg-primary_red text-gray-100 font-medium text-lg rounded-md LogInBtn">
-                  Sign In
+                  Continue
                 </button>
               </div>
 
               <div className="my-4">
                 
-                <p className="LogInNewToNetflixText">New to Netflix? <span className="LogInSignUpText"> <Link to={'/account/signup'}> Sign up now</Link></span>.</p>
+                <Link to={'/account'}><p className="LogInNewToNetflixText">Cancel</p></Link>
               </div>
             </div>
           </form>
@@ -61,4 +62,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Password;

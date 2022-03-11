@@ -10,6 +10,9 @@ import MovieDetails from './Pages/MovieDetails';
 import ModelPage from './Pages/ModelPage';
 import ProfileEdit from './Pages/ProfileEdit';
 import ManageProfile from './Pages/ManageProfile';
+import YourAccount from './Pages/YourAccount';
+import ChangeEmail from './Pages/ChangeEmail';
+import ChangePassword from './Pages/ChangePassword';
 
 function App() {
   return (
@@ -19,10 +22,13 @@ function App() {
           <Route exact path='/' element={<Index/>}/>
           <Route path='/account/login' element={<Login/>}/>
           <Route path='/account/signup' element={<SignUp/>}/>
+          <Route path='/account/changemail' element={<ChangeEmail/>}/>
+          <Route path='/account/changepassword' element={<ChangePassword/>}/>
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/createprofile' element={<ProfileCreate/>}/>
           <Route path='/editprofile' element={<ProfileEdit/>}/>
           <Route path='/manageprofiles' element={<ManageProfile/>}/>
+          <Route path='/account' element={<YourAccount/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/movie' element={<MovieDetails/>}/>
           <Route path='/tvshows' element={<ModelPage headTitle='Award-Winning TV Shows' titleOne='Trending Now' titleTwo='Critically Acclaimed TV Dramas' titleThree='Top Picks for bm25'/>}/>
