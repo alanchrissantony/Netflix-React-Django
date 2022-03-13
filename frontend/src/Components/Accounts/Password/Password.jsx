@@ -1,22 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../../App.css";
 import "../Login/Login.css"
 import "./Password.css";
 function Password() {
+
+  const [error, setError] = useState(false);
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (password === confirmPassword) {
+      if (password.length >= 8) {
+        setError(false);
+        console.log(password);
+      }else {
+        setError("Passwords must be at least 8 characters");
+      }
+    } else {
+      setError("Password and confirm password didn't match. Try again.");
+    }
+  };
+
   return (
     <div className="LogInRootSection">
       <header className="min-h-screen w-full bg-black bg-opacity-75 showcase border-gray-600 border-b-8 flex justify-center py-20 bg-no-repeat logInSection">
         <div className="z-10 h-full py-32 md:py-0 text-gray-100 w-6/12  flex items-center flex-col">
           <form
-            method="POST"
+            onSubmit={submitHandler}
             className="bg-opacity-70 py-8 px-4 w-8/12 rounded-md LogInForm"
           >
             <div className="LoginFormDiv">
               <h1 className="text-4xl font-semibold LoginSignInText">Change Password</h1>
 
               <div className=" text-center my-4 text-primary_red">
-                <p className="text-primary_red "></p>
+                {error && <p className="text-primary_red ">{error}</p>}
               </div>
 
               <div>
@@ -25,6 +44,9 @@ function Password() {
                   type="password"
                   name="password"
                   id="id_password"
+                  onChange={(e)=>{
+                    setPassword(e.target.value)
+                  }}
                   placeholder="New password"
                 />
               </div>
@@ -34,6 +56,9 @@ function Password() {
                   type="password"
                   name="confirm_password"
                   id="id_password"
+                  onChange={(e)=>{
+                    setConfirmPassword(e.target.value)
+                  }}
                   placeholder="Confirm password"
                 />
               </div>

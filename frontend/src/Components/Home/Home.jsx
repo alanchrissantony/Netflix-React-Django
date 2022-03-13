@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import "../../App.css";
 import TvImg from '../../Images/tv.png'
 import MobileImg from '../../Images/mobile-0819.jpg'
 import KidImg from '../../Images/netflix_kid.png'
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
+
 
 
 function Home() {
+
+  const navigate = useNavigate()
+
+  const [email, setEmail] = useState('')
+  const [error, setError] = useState(false);
+
+
+  const submitHandler = (e)=>{
+    e.preventDefault()
+    if(!email){
+      setError('Email is required')
+    }else{
+      setError(false)
+      navigate('/account/signup')
+    }
+  }
+
   return (
     <div className="homeSection">
       <header
@@ -24,26 +42,30 @@ function Home() {
             membership.
           </h4>
 
-          <div className="w-full flex justify-center indexGetStartedInputDiv">
+          <form onSubmit={submitHandler} className="w-full flex justify-center indexGetStartedInputDiv">
             <div className="flex justify-center items-center w-11/12 md:w-10/12">
               <input
                 type="email"
                 name=""
                 id=""
                 placeholder="Email address"
+                onChange={(e)=>{
+                  setEmail(e.target.value)
+                }}
                 className="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4 indexGetStartedInput"
               />
-              <Link to={'/account/signup'} className="md:w-1/4">
-                <button className="bg-primary_red font-medium md:font-normal flex justify-center items-center py-4 px-2 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl indexGetStartedBtn">
+              <div className="md:w-1/4">
+                <button type="submit" className="bg-primary_red font-medium md:font-normal flex justify-center items-center py-4 px-2 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl indexGetStartedBtn">
                   <span>Get Started</span>
                   <ion-icon
                     name="chevron-forward-outline"
                     className="text-2xl"
                   ></ion-icon>
                 </button>
-              </Link>
+              </div>
             </div>
-          </div>
+          </form>
+          {error && <p className="homeEmailErrorText">{error}</p>}
         </div>
       </header>
 
