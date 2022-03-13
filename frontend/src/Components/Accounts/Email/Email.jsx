@@ -44,7 +44,7 @@ function Email() {
 
               <div className="my-4">
                 
-                <Link to={'/account'}><p className="LogInNewToNetflixText">Cancel</p></Link>
+                <Link to={'/account'}><p className="LogInNewToNetflixText EmailCancelText">Cancel</p></Link>
               </div>
             </div>
           </form>

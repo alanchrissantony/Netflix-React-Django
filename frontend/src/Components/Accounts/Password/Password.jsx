@@ -52,7 +52,7 @@ function Password() {
 
               <div className="my-4">
                 
-                <Link to={'/account'}><p className="LogInNewToNetflixText">Cancel</p></Link>
+                <Link to={'/account'}><p className="LogInNewToNetflixText PasswordCancelText">Cancel</p></Link>
               </div>
             </div>
           </form>

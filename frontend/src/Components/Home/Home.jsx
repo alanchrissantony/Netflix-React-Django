@@ -6,6 +6,7 @@ import MobileImg from '../../Images/mobile-0819.jpg'
 import KidImg from '../../Images/netflix_kid.png'
 import { Link } from "react-router-dom";
 
+
 function Home() {
   return (
     <div className="homeSection">
