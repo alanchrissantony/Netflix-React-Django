@@ -13,6 +13,7 @@ import ManageProfile from './Pages/ManageProfile';
 import YourAccount from './Pages/YourAccount';
 import ChangeEmail from './Pages/ChangeEmail';
 import ChangePassword from './Pages/ChangePassword';
+import { render } from 'react-dom';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           <Route path='/createprofile' element={<ProfileCreate/>}/>
           <Route path='/editprofile' element={<ProfileEdit/>}/>
           <Route path='/manageprofiles' element={<ManageProfile/>}/>
-          <Route path='/account' element={<YourAccount/>}/>
+          <Route path='/profile/account' element={<YourAccount/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/movie' element={<MovieDetails/>}/>
           <Route path='/tvshows' element={<ModelPage headTitle='Award-Winning TV Shows' titleOne='Trending Now' titleTwo='Critically Acclaimed TV Dramas' titleThree='Top Picks for bm25'/>}/>
@@ -41,4 +42,7 @@ function App() {
   );
 }
 
+
 export default App;
+
+

@@ -63,7 +63,7 @@ function AccountHeader() {
         <div className="headerDropdownContentBottomContainer">
         <div className="headerDropdownContentBottomDiv">
             <div className="headerDropdownContentYourAccountDiv">
-            <Link to={'/account'}><p className="headerDropdownContentYourAccount headerDropdownContentBottomText">
+            <Link to={'/profile/account'}><p className="headerDropdownContentYourAccount headerDropdownContentBottomText">
                 Account
               </p></Link>
             </div>

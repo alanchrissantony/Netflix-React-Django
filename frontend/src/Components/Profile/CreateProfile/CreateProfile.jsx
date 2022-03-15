@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../App.css";
 import "./CreateProfile.css";
 
@@ -38,11 +39,11 @@ function CreateProfile() {
                 Continue
               </button>
             </div>
-            <div className="flex createProfileCancelBtnDiv">
+            <Link to={'/profile'} className="flex createProfileCancelBtnDiv">
               <button className="createProfileCancelBtn">
                 Cancel
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
