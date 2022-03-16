@@ -7,7 +7,10 @@ import Profile from './Pages/Profile';
 import ProfileCreate from './Pages/ProfileCreate';
 import Home from './Pages/Home';
 import MovieDetails from './Pages/MovieDetails';
-import ModelPage from './Pages/ModelPage';
+import Movie from './Pages/Movies';
+import TVShows from './Pages/TVShows';
+import Latest from './Pages/Latest';
+import MyList from './Pages/MyList';
 import ProfileEdit from './Pages/ProfileEdit';
 import ManageProfile from './Pages/ManageProfile';
 import YourAccount from './Pages/YourAccount';
@@ -32,10 +35,10 @@ function App() {
           <Route path='/profile/account' element={<YourAccount/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/movie' element={<MovieDetails/>}/>
-          <Route path='/tvshows' element={<ModelPage headTitle='Award-Winning TV Shows' titleOne='Trending Now' titleTwo='Critically Acclaimed TV Dramas' titleThree='Top Picks for bm25'/>}/>
-          <Route path='/movies' element={<ModelPage headTitle='Movies' titleOne='Trending Now' titleTwo='New Releases' titleThree='Popular Movies'/>}/>
-          <Route path='/latest' element={<ModelPage headTitle='Latest' titleOne='Trending Now' titleTwo='New Releases' titleThree='Popular Movies'/>}/>
-          <Route path='/mylist' element={<ModelPage headTitle='My List' titleOne='Recently Added' titleTwo='Continue Watching' titleThree='Popular on Netflix'/>}/>
+          <Route path='/tvshows' element={<TVShows/>}/>
+          <Route path='/movies' element={<Movie/>}/>
+          <Route path='/latest' element={<Latest/>}/>
+          <Route path='/mylist' element={<MyList/>}/>
         </Routes>
       </Router>
     </div>

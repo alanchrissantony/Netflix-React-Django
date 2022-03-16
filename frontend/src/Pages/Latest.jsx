@@ -1,5 +1,5 @@
 import React from 'react'
-import Folio from '../Components/Folio/Folio'
+import Latest from '../Components/MovieScreens/Latest'
 import Footer from '../Components/Footer/Footer'
 import Header from '../Components/Header/Header'
 
@@ -8,7 +8,7 @@ function ModelPage(props) {
   return (
     <div>
         <Header/>
-        <Folio headTitle={props.headTitle} titleOne={props.titleOne} titleTwo={props.titleTwo} titleThree={props.titleThree}/>
+        <Latest/>
         <Footer/>
     </div>
   )

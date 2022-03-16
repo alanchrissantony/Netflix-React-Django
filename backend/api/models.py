@@ -13,7 +13,7 @@ MOVIE_CHOICES=(
 )
 
 # Create your models here.
-class Movie(models.Model):
+class FilmedMovie(models.Model):
     title=models.CharField(max_length=225)
     description:str=models.TextField()
     content:str=models.TextField()
@@ -21,8 +21,8 @@ class Movie(models.Model):
     uuid=models.UUIDField(default=uuid.uuid4)
     type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
     videos=models.CharField(max_length=225)
-    image=models.ImageField(upload_to='image')
-    flyer=models.ImageField(upload_to='flyers')
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
     age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
 
     def __str__ (self):

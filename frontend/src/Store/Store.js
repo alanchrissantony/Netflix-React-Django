@@ -1,9 +1,10 @@
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
-import { movieListReducer } from '../Reducers/MovieReducers';
+import { movieListReducer, netflixOrginalsReducer } from '../Reducers/MovieReducers';
 
 const reducer = combineReducers({
     movieList: movieListReducer,
+    netflixOriginals: netflixOrginalsReducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
