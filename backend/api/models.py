@@ -13,7 +13,88 @@ MOVIE_CHOICES=(
 )
 
 # Create your models here.
-class FilmedMovie(models.Model):
+class filmedmovie(models.Model):
+    title=models.CharField(max_length=225)
+    description:str=models.TextField()
+    content:str=models.TextField()
+    created=models.DateTimeField(auto_now_add=True)
+    uuid=models.UUIDField(default=uuid.uuid4)
+    type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
+    videos=models.CharField(max_length=225)
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
+    age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
+
+    def __str__ (self):
+        return self.title
+
+
+class netflixorginals(models.Model):
+    title=models.CharField(max_length=225)
+    description:str=models.TextField()
+    content:str=models.TextField()
+    created=models.DateTimeField(auto_now_add=True)
+    uuid=models.UUIDField(default=uuid.uuid4)
+    type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
+    videos=models.CharField(max_length=225)
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
+    age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
+
+    def __str__ (self):
+        return self.title
+
+
+class action(models.Model):
+    title=models.CharField(max_length=225)
+    description:str=models.TextField()
+    content:str=models.TextField()
+    created=models.DateTimeField(auto_now_add=True)
+    uuid=models.UUIDField(default=uuid.uuid4)
+    type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
+    videos=models.CharField(max_length=225)
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
+    age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
+
+    def __str__ (self):
+        return self.title
+
+
+class horror(models.Model):
+    title=models.CharField(max_length=225)
+    description:str=models.TextField()
+    content:str=models.TextField()
+    created=models.DateTimeField(auto_now_add=True)
+    uuid=models.UUIDField(default=uuid.uuid4)
+    type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
+    videos=models.CharField(max_length=225)
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
+    age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
+
+    def __str__ (self):
+        return self.title
+
+
+
+class romance(models.Model):
+    title=models.CharField(max_length=225)
+    description:str=models.TextField()
+    content:str=models.TextField()
+    created=models.DateTimeField(auto_now_add=True)
+    uuid=models.UUIDField(default=uuid.uuid4)
+    type=models.CharField(max_length=10, choices=MOVIE_CHOICES)
+    videos=models.CharField(max_length=225)
+    image=models.CharField(max_length=225)
+    flyer=models.CharField(max_length=225)
+    age_limit=models.CharField(max_length=10, choices=AGE_CHOICES)
+
+    def __str__ (self):
+        return self.title
+
+
+class documentary(models.Model):
     title=models.CharField(max_length=225)
     description:str=models.TextField()
     content:str=models.TextField()
