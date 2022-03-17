@@ -11,24 +11,29 @@ function RowPost(props) {
       ) : error ? (
         "Error"
       ) : (
-      <div className="row">
-        <p
-          className={props.active ? "rowPosterTitle active" : "rowPosterTitle"}
-        >
-          {props.title}
-        </p>
-        <div className="posters">
-          {movies.map((movie)=>(
-          <img
-            src={
-              movie.flyer
+        <div className="row">
+          <p
+            className={
+              props.active ? "rowPosterTitle active" : "rowPosterTitle"
             }
-            alt=""
-            className={props.isSmall ? "smallPoster" : "poster"}
-          />
-          ))}
+          >
+            {props.title}
+          </p>
+          <div className="posters">
+            {movies.map((movie) => (
+            
+              <img
+              key={movie.uuid}
+                src={
+                  movie.flyer
+                }
+                alt=""
+                className={props.isSmall ? "smallPoster" : "poster"}
+              />
+
+            ))}
+          </div>
         </div>
-      </div>
       )}
     </div>
   );

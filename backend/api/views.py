@@ -1,59 +1,101 @@
+from unicodedata import category
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
-from .models import filmedmovie, netflixorginals, horror, action, romance, documentary
-from .serializers import FilmedMovieSerializer, NetflixOriginalsSerializer, HorrorSerializer, ActionSerializer, RomanceSerializer, DocumentarySerializer
+from .models import Movie
+from .serializers import MovieSerializer
 
 
 
 
 # Create your views here.
-class FilmedMovies(View):
+
+class Movies(View):
     def get(self, request, *args, **kwargs):
-        movies= filmedmovie.objects.all()
-        data = FilmedMovieSerializer(movies, many= True)
+        movies= Movie.objects.all()
+        data = MovieSerializer(movies, many= True)
+
+        return JsonResponse(data.data, safe=False)
+
+
+class PremiereMovies(View):
+    def get(self, request, *args, **kwargs):
+        movies= Movie.objects.filter(premiere='YES')
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)
 
 
 class NetflixOriginals(View):
     def get(self, request, *args, **kwargs):
-        movies= netflixorginals.objects.all()
-        print(netflixorginals.objects.all())
-        data = NetflixOriginalsSerializer(movies, many= True)
+        movies= Movie.objects.filter(category ='Originals')
+
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)
         
 
 class HorrorMovies(View):
     def get(self, request, *args, **kwargs):
-        movies= horror.objects.all()
-        data = HorrorSerializer(movies, many= True)
+        movies= Movie.objects.filter(category ='Horror')
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)
 
 
 class ActionMovies(View):
     def get(self, request, *args, **kwargs):
-        movies= action.objects.all()
-        print(netflixorginals.objects.all())
-        data = ActionSerializer(movies, many= True)
+        movies= Movie.objects.filter(category ='Action')
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)
 
 
 class RomanceMovies(View):
     def get(self, request, *args, **kwargs):
-        movies= romance.objects.all()
-        data = RomanceSerializer(movies, many= True)
+        movies= Movie.objects.all()
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)
 
 
 class DocumentaryMovies(View):
     def get(self, request, *args, **kwargs):
-        movies= documentary.objects.all()
-        print(netflixorginals.objects.all())
-        data = DocumentarySerializer(movies, many= True)
+        movies= Movie.objects.all()
+
+        data = MovieSerializer(movies, many= True)
+
+        return JsonResponse(data.data, safe=False)
+
+
+class TrendingMovies(View):
+    def get(self, request, *args, **kwargs):
+        movies= Movie.objects.filter(status ='Trending')
+        data = MovieSerializer(movies, many= True)
+
+        return JsonResponse(data.data, safe=False)
+
+
+class PopularMovies(View):
+    def get(self, request, *args, **kwargs):
+        movies= Movie.objects.filter(status ='Popular')
+        data = MovieSerializer(movies, many= True)
+
+        return JsonResponse(data.data, safe=False)
+
+
+
+class NewReleaseMovies(View):
+    def get(self, request, *args, **kwargs):
+        movies= Movie.objects.filter(status ='New Release')
+        data = MovieSerializer(movies, many= True)
+
+        return JsonResponse(data.data, safe=False)
+
+
+class MostWatchedMovies(View):
+    def get(self, request, *args, **kwargs):
+        movies= Movie.objects.filter(status ='Most Watched')
+        data = MovieSerializer(movies, many= True)
 
         return JsonResponse(data.data, safe=False)

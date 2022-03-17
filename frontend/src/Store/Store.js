@@ -1,10 +1,21 @@
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
-import { movieListReducer, netflixOrginalsReducer } from '../Reducers/MovieReducers';
+import { actionMovieReducer, documentaryReducer, horrorMovieReducer, mostWatchedMovieReducer, movieListReducer, netflixOrginalsReducer, newReleaseMovieReducer, popularMovieReducer, premiereMovieReducer, romanticMovieReducer, trendingMovieReducer } from '../Reducers/MovieReducers';
 
 const reducer = combineReducers({
-    movieList: movieListReducer,
+    moviesList: movieListReducer,
+
+    premiereMovie: premiereMovieReducer,
     netflixOriginals: netflixOrginalsReducer,
+    horrorMovies: horrorMovieReducer,
+    actionMovies: actionMovieReducer,
+    romanticMovies: romanticMovieReducer,
+    documentaries: documentaryReducer,
+
+    trendingMovies: trendingMovieReducer,
+    popularMovies: popularMovieReducer,
+    newlyReleasedMovies: newReleaseMovieReducer,
+    mostWatchedMovies: mostWatchedMovieReducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -1,12 +1,17 @@
 from django.urls import path
-from .views import FilmedMovies, NetflixOriginals
+from .views import PremiereMovies, NetflixOriginals, HorrorMovies, ActionMovies, RomanceMovies, DocumentaryMovies, Movies, TrendingMovies, PopularMovies, NewReleaseMovies, MostWatchedMovies
 
 
 urlpatterns = [
-    path('index/filmed/', FilmedMovies.as_view()),
-    path('index/netflix/originals', NetflixOriginals.as_view()),
-    path('index/horror/', FilmedMovies.as_view()),
-    path('index/action/', FilmedMovies.as_view()),
-    path('index/romance/', FilmedMovies.as_view()),
-    path('index/documentary/', FilmedMovies.as_view()),
+    path('movies/all', Movies.as_view()),
+    path('movies/premiere/', PremiereMovies.as_view()),
+    path('movies/originals', NetflixOriginals.as_view()),
+    path('movies/horror/', HorrorMovies.as_view()),
+    path('movies/action/', ActionMovies.as_view()),
+    path('movies/romance/', RomanceMovies.as_view()),
+    path('movies/documentary/', DocumentaryMovies.as_view()),
+    path('movies/trending/', TrendingMovies.as_view()),
+    path('movies/popular/', PopularMovies.as_view()),
+    path('movies/newrelease/', NewReleaseMovies.as_view()),
+    path('movies/mostwatched/', MostWatchedMovies.as_view()),
 ]

@@ -34,7 +34,7 @@ function App() {
           <Route path='/manageprofiles' element={<ManageProfile/>}/>
           <Route path='/profile/account' element={<YourAccount/>}/>
           <Route path='/home' element={<Home/>}/>
-          <Route path='/movie' element={<MovieDetails/>}/>
+          <Route path='/movie/:id' element={<MovieDetails/>}/>
           <Route path='/tvshows' element={<TVShows/>}/>
           <Route path='/movies' element={<Movie/>}/>
           <Route path='/latest' element={<Latest/>}/>

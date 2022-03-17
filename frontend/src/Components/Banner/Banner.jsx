@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
 import "./Banner.css";
 import { useDispatch, useSelector } from "react-redux";
-import { movieList } from "../../Actions/MovieActions";
+import { premiereMovie } from "../../Actions/MovieActions";
+import { useNavigate } from "react-router-dom";
 
 function Banner() {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
-  const listMovies = useSelector((state) => state.movieList);
-  const { loading, error, movies } = listMovies;
+  const premiere_movie = useSelector((state) => state.premiereMovie);
+  const { loading, error, movies } = premiere_movie;
 
   useEffect(() => {
-    dispatch(movieList());
+    dispatch(premiereMovie());
   }, [dispatch]);
 
   return (
@@ -21,12 +23,15 @@ function Banner() {
         "Error"
       ) : (
         <div>
-          {movies.map((movie) => (
-            <div className="bannerBanner" key={movie.uuid} style={{backgroundImage: "url(" + movie.image + ")"}}>
+          
+            <div className="bannerBanner" style={{backgroundImage: "url(" + movies[0].image + ")"}}>
               <div className="bannerContent">
-                <h1 className="bannerTitle">{movie.title}</h1>
+                <h1 className="bannerTitle">{movies[0].title}</h1>
                 <div className="bannerBanner_buttons">
-                  <button className="bannerButton">
+                  <button className="bannerButton" onClick={(e)=>{
+                    e.preventDefault()
+                    navigate(`/movie/${movies[0].uuid}`)
+                  }}>
                     <i class="fa-solid fa-play bannerPlayIcon"></i> Play
                   </button>
                   <button className="bannerButton">
@@ -35,14 +40,14 @@ function Banner() {
                 </div>
                 <h1 className="bannerDescription">
                   {
-                    movie.content
+                    movies[0].content
                   }
                 </h1>
               </div>
 
               <div className="bannerFade_bottom"></div>
             </div>
-          ))}
+ 
         </div>
       )}
     </div>
