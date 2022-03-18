@@ -30,7 +30,7 @@ function Banner() {
                 <div className="bannerBanner_buttons">
                   <button className="bannerButton" onClick={(e)=>{
                     e.preventDefault()
-                    navigate(`/movie/${movies[0].uuid}`)
+                    navigate(`/watch/${movies[0].uuid}`)
                   }}>
                     <i class="fa-solid fa-play bannerPlayIcon"></i> Play
                   </button>

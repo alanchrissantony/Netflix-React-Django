@@ -1,5 +1,5 @@
 .detailsSection{
-    background-image: url('../../Images/spider-man-no-way-home-2021_1280x720.jpg');
+    background-size: cover;
 }
 .detailsPlayBtn{
     color: black;
@@ -10,4 +10,7 @@
 .detailsEpisodeSection{
     margin-top:2rem;
     margin-bottom:2rem;
+}
+.detailsDescription{
+    margin-top: 1rem;
 }

@@ -14,4 +14,5 @@ urlpatterns = [
     path('movies/popular/', PopularMovies.as_view()),
     path('movies/newrelease/', NewReleaseMovies.as_view()),
     path('movies/mostwatched/', MostWatchedMovies.as_view()),
+    path('movies/<slug:slug>', MostWatchedMovies.as_view()),
 ]

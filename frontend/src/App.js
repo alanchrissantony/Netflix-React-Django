@@ -16,7 +16,8 @@ import ManageProfile from './Pages/ManageProfile';
 import YourAccount from './Pages/YourAccount';
 import ChangeEmail from './Pages/ChangeEmail';
 import ChangePassword from './Pages/ChangePassword';
-import { render } from 'react-dom';
+import Play from './Pages/Play';
+
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/movies' element={<Movie/>}/>
           <Route path='/latest' element={<Latest/>}/>
           <Route path='/mylist' element={<MyList/>}/>
+          <Route path='/watch/:id' element={<Play/>}/>
         </Routes>
       </Router>
     </div>

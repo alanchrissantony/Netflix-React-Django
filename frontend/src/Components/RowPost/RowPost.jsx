@@ -1,7 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./RowPost.css";
 
 function RowPost(props) {
+
+  const navigate = useNavigate()
+
   const { loading, error, movies } = props.content;
 
   return (
@@ -29,6 +33,10 @@ function RowPost(props) {
                 }
                 alt=""
                 className={props.isSmall ? "smallPoster" : "poster"}
+                onClick={(e)=>{
+                  e.preventDefault()
+                  navigate(`/movie/${movie.uuid}`)
+                }}
               />
 
             ))}
