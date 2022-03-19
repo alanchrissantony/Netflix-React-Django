@@ -24,6 +24,7 @@ function Movies() {
     dispatch(mostWatchedMovies());
   }, [dispatch]);
 
+
   return (
     <div className='folioSection'>
         <p className='folioTitle'>{'Movies'}</p>

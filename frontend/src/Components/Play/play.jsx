@@ -27,6 +27,7 @@ function Play() {
       ) : (
         <main class="bg-primary_black h-full w-full ">
           <iframe
+            title="watch"
             class="w-full h-screen player"
             src={movies[0].videos}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

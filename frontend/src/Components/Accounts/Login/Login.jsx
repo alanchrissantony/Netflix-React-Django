@@ -6,6 +6,7 @@ function Login() {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [passwordError, setPasswordError] = useState(false);
 
   const submitHandler = (e)=>{
     e.preventDefault()
@@ -24,7 +25,9 @@ function Login() {
               <h1 className="text-4xl font-semibold LoginSignInText">Sign In</h1>
 
               <div className=" text-center my-4 text-primary_red">
-                <p className="text-primary_red "></p>
+                <p className="text-primary_red ">
+                {passwordError && <p>! {passwordError}</p>}
+                </p>
               </div>
 
               <div>

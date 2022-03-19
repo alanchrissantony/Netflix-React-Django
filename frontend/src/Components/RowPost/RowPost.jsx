@@ -31,7 +31,7 @@ function RowPost(props) {
                 src={
                   movie.flyer
                 }
-                alt=""
+                alt={movie.image}
                 className={props.isSmall ? "smallPoster" : "poster"}
                 onClick={(e)=>{
                   e.preventDefault()

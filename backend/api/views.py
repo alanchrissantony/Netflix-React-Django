@@ -101,7 +101,7 @@ class MostWatchedMovies(View):
         return JsonResponse(data.data, safe=False)
 
 
-class MostWatchedMovies(View):
+class MovieDetails(View):
     def get(self, request, *args, **kwargs):
         id = request.path.split('/')[3]
         movies= Movie.objects.filter(uuid=id)

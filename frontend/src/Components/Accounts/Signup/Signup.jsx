@@ -5,7 +5,7 @@ import "./Signup.css";
 
 function Signup() {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -13,13 +13,13 @@ function Signup() {
     e.preventDefault();
     if (password === confirmPassword) {
       if (password.length >= 8) {
-        setError(false);
+        setPasswordError(false);
         console.log(email, password);
       }else {
-        setError("Passwords must be at least 8 characters");
+        setPasswordError("Passwords must be at least 8 characters");
       }
     } else {
-      setError("Password and confirm password didn't match. Try again.");
+      setPasswordError("Password and confirm password didn't match. Try again.");
     }
   };
 
@@ -37,7 +37,7 @@ function Signup() {
               </h1>
 
               <div className=" text-center my-4 text-primary_red">
-                {error && <p>! {error}</p>}
+                {passwordError && <p>! {passwordError}</p>}
               </div>
 
               <div>
