@@ -28,6 +28,10 @@
     cursor: pointer;
     margin-right: 1rem;
 }
+.bannerButton:focus{
+    outline: none;
+    border: none;
+}
 .bannerButton:hover{
     color: black;
     background-color: #e6e6e6;

@@ -16,6 +16,13 @@
 .indexGetStartedBtn{
     width: 210px;
 }
+.indexGetStartedBtn:focus{
+    outline: gray;
+    border: gray;
+}
+.indexGetStartedBtn:hover{
+    background-color: red;
+}
 .IndexUnlimitedText{
     font-size: 3.125rem;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -36,7 +43,7 @@
     font-size: 1.625rem;
     font-weight: 400;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     color: #fff;
 }
 .IndexReadyText{
@@ -44,7 +51,7 @@
     font-weight: 400;
     max-width: 640px;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     color: #fff;
 }
 .homeEmailErrorText{

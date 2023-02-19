@@ -1,20 +1,22 @@
-from django.urls import path
-from .views import MovieDetails, PremiereMovies, NetflixOriginals, HorrorMovies, ActionMovies, RomanceMovies, DocumentaryMovies, Movies, TrendingMovies, PopularMovies, NewReleaseMovies, MostWatchedMovies
+"""api URL Configuration
 
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.1/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('movies/all', Movies.as_view()),
-    path('movies/premiere/', PremiereMovies.as_view()),
-    path('movies/originals', NetflixOriginals.as_view()),
-    path('movies/horror/', HorrorMovies.as_view()),
-    path('movies/action/', ActionMovies.as_view()),
-    path('movies/romance/', RomanceMovies.as_view()),
-    path('movies/documentary/', DocumentaryMovies.as_view()),
-    path('movies/trending/', TrendingMovies.as_view()),
-    path('movies/popular/', PopularMovies.as_view()),
-    path('movies/newrelease/', NewReleaseMovies.as_view()),
-    path('movies/mostwatched/', MostWatchedMovies.as_view()),
-    path('movies/<slug:slug>', MovieDetails.as_view()),
-
-    
+    path('admin/', admin.site.urls),
+    path('api/', include('playbacks.urls'))
 ]
